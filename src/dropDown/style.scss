@@ -1,0 +1,86 @@
+.main_container{
+    height: 50px;
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+    margin-top: 20px;
+    cursor: pointer;
+    .title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 1em;
+        h1{
+            color: hsl(240, 6%, 50%);
+            text-transform: capitalize;
+            font-weight: 400;
+            font-size: 20px;
+            transition: all 0.2s ease-in-out;
+            -webkit-transition: all 0.2s ease-in-out;
+            -moz-transition: all 0.2s ease-in-out;
+            -ms-transition: all 0.2s ease-in-out;
+            -o-transition: all 0.2s ease-in-out;
+        }
+        img{
+            width: 15px;
+            height: 10px;
+        }
+    }
+    .title:hover h1{
+        color: hsl(238, 29%, 16%);
+        font-weight: bold;
+    }
+    .content{
+        margin-top: 25px;
+        height: 0;
+        overflow: hidden;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        text-align: left;
+        font-size: 16px;
+        transition: height 5s ease-in-out !important;
+        -webkit-transition: height 5s ease-in-out !important;
+        -moz-transition: height 5s ease-in-out !important;
+        -ms-transition: height 5s ease-in-out !important;
+        -o-transition: height 5s ease-in-out !important;
+}
+}
+.main_container#show{
+    height: fit-content;
+    .title{
+        h1{
+            color: hsl(238, 29%, 16%);
+            font-weight: bold;
+        }
+    }
+    .content{
+        height: fit-content;
+        
+    }
+}
+
+@media screen and (max-width:450px){
+    .main_container{
+        height: 40px;
+        width: 100%;
+        .title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-right: 0;
+            h1{
+                color: hsl(240, 6%, 50%);
+                text-transform: capitalize;
+                font-weight: 400;
+                font-size: 12px;
+                transition: all 0.2s ease-in-out;
+                -webkit-transition: all 0.2s ease-in-out;
+                -moz-transition: all 0.2s ease-in-out;
+                -ms-transition: all 0.2s ease-in-out;
+                -o-transition: all 0.2s ease-in-out;
+            }
+            img{
+                width: 12px;
+                height: 10px;
+            }
+        }
+    }
+}

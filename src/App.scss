@@ -1,0 +1,225 @@
+.App{
+  width: 1200px;
+  height:600px;
+  background-color: white;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  position: relative;
+  overflow: hidden;
+  margin: 2em;
+  
+}
+
+.img_container{
+  position: absolute;
+  left: -80px;
+  bottom: 100px;
+  .pattern{
+    height: auto;
+    position: absolute;
+    bottom: -220px;
+    left: -100%;
+    z-index: 0;
+  }
+  .box{
+    position: absolute;
+    left: 20px;
+    top: 150px;
+    z-index: 100;
+  }
+  .draw{
+    width: auto;
+    position: relative;
+    z-index: 10;
+  }
+}
+.faqs_container{
+  position: absolute;
+  right: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  padding: 3em;
+  h1.title{
+    color: hsl(238, 29%, 16%);
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 1em;
+  }
+}
+@media screen and (max-width:1250px){
+  .App{
+    width: 95vw;
+    height:600px;
+    margin: 1em;
+    
+  }
+  .faqs_container{
+    right: 20px;
+    top: 50%;
+    width: 50%;
+    padding: 1em;
+    h1.title{
+      color: hsl(238, 29%, 16%);
+      font-size: 40px;
+      font-weight: bold;
+      margin-bottom: 1em;
+    }
+  }
+}
+@media screen and (max-width:900px){
+  .App{
+    width: 95vw;
+    min-height:80vh;
+    background-color: white;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    position: relative;
+    top: 10vh;
+    overflow:inherit;
+    margin: 1em;
+    height: fit-content;
+    
+  }
+  .faqs_container{
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    transform: translateY(auto);
+    width: 95%;
+    -webkit-transform: translateY(auto);
+    -moz-transform: translateY(auto);
+    -ms-transform: translateY(auto);
+    -o-transform: translateY(auto);
+    padding: 1em;
+    overflow: auto;
+    h1.title
+{
+      color: hsl(238, 29%, 16%);
+      font-size: 40px;
+      font-weight: bold;
+      margin-bottom: 1em;
+    }
+  }
+  .img_container{
+    position: absolute;
+    left: 50%;
+    top: -150px;
+    transform: translateX(-50%);
+    bottom: 0;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    .pattern{
+      height: 50%;
+      position: absolute;
+      top: -125px;
+      left: 50%;
+      z-index: 0;
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    }
+    .box{
+      width: 120px;
+      position: absolute;
+      left: 00px;
+      top: 120px;
+      z-index: 100;
+    }
+    .draw{
+      width: 350px;
+      height: auto;
+      position: relative;
+
+      z-index: 10;
+    }
+  }
+}
+@media screen and (max-width:450px){
+  .App{
+    width: 95vw;
+    min-height:110vh;
+    background-color: white;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    position: relative;
+    top: 30vh;
+    overflow:inherit;
+    margin: 1em;
+    
+  }
+  .faqs_container{
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    transform: translateY(auto);
+    width: 95%;
+    -webkit-transform: translateY(auto);
+    -moz-transform: translateY(auto);
+    -ms-transform: translateY(auto);
+    -o-transform: translateY(auto);
+    padding: 1em;
+    h1.title
+{
+      margin: auto;
+      text-align: center;
+      color: hsl(238, 29%, 16%);
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 1em;
+    }
+  }
+  .img_container{
+    position: absolute;
+    left: 50%;
+    top: -150px;
+    transform: translateX(-50%);
+    bottom: 0;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    .pattern{
+      height: 45%;
+      position: absolute;
+      top: -125px;
+      left: 50%;
+      z-index: 0;
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    }
+    .box{
+      width: 120px;
+      position: absolute;
+      left: 00px;
+      top: 120px;
+      z-index: 100;
+    }
+    .draw{
+      width: 320px;
+      height: auto;
+      position: relative;
+      z-index: 10;
+    }
+  }
+}
